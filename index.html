@@ -130,26 +130,37 @@
             0 0 18px var(--accent);
     }
 
+    #image-container {
+        display: flex;
+        gap: 0px;
+    }
+
+    #image-container img {
+        width: 40%;
+        height: auto;
+    }
+
+    #portrait img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #flag img {
+        width: 80px;
+        height: 120px;
+        padding-top: 50%;
+    }
+
     @media (max-width: 500px) {
         .clock {
             font-size: 1.6rem;
         }
     }
+
 </style>
 </head>
 
 <body>
-    <script>
-    const PASSWORD = "barrio";
-    const input = prompt("pon la contraseña lil bro");
-
-    if (input !== PASSWORD) {
-        document.documentElement.innerHTML = "";
-        alert("LMAO vos quien monda sos");
-        throw new Error("Unauthorized");
-    }
-</script>
-
 
 <header>
     <h1>BARRIO QUÉ HORA ES??????????</h1>
@@ -160,61 +171,157 @@
     <div class="card" style="--accent:#ff3b3b">
         <p class="name">Panchi</p>
         <div id="bogota-clock" class="clock"></div>
+        <div id="image-container">
+            <div id="portrait">
+                <img src="portraits/panchino.png" alt="panchino xd">
+            </div>
+            <div id="flag">
+                <img id="flag" src="flags/colombia.png" alt="colombia xd">
+            </div>
+        </div>
     </div>
 
     <div class="card" style="--accent:#b76bff">
         <p class="name">Will</p>
         <div id="canada-clock" class="clock"></div>
+        <div id="image-container">
+            <div id="portrait">
+                <img src="portraits/wilmar.png" alt="wilmar xd">
+            </div>
+            <div id="flag">
+                <img id="flag" src="flags/canada.png" alt="canada xd">
+            </div>
+        </div>
     </div>
 
     <div class="card" style="--accent:#ffe600">
         <p class="name">Campi</p>
         <div id="central-clock" class="clock"></div>
+        <div id="image-container">
+            <div id="portrait">
+                <img src="portraits/campos.png" alt="campos xd">
+            </div>
+            <div id="flag">
+                <img id="flag" src="flags/usa.png" alt="usa xd">
+            </div>
+        </div>
     </div>
 
-    <div class="card" style="--accent:#3b6cff">
-        <p class="name">Juan</p>
+    <div class="card" style="--accent:#3bff6c">
+        <p class="name">Juanchis</p>
         <div id="caracas2-clock" class="clock"></div>
+        <div id="image-container">
+            <div id="portrait">
+                <img src="portraits/juan.png" alt="juan xd">
+            </div>
+            <div id="flag">
+                <img id="flag" src="flags/venezuela.png" alt="venezuela xd">
+            </div>
+        </div>
     </div>
 
     <div class="card" style="--accent:#9e9e9e">
         <p class="name">Ale</p>
         <div id="caracas3-clock" class="clock"></div>
+        <div id="image-container">
+            <div id="portrait">
+                <img src="portraits/alexa.png" alt="alexa xd">
+            </div>
+            <div id="flag">
+                <img id="flag" src="flags/venezuela.png" alt="venezuela xd">
+            </div>
+        </div>
     </div>
 
-    <div class="card" style="--accent:#3bff6c">
+    <div class="card" style="--accent:#3b6cff">
         <p class="name">Javi</p>
         <div id="caracas-clock" class="clock"></div>
+        <div id="image-container">
+            <div id="portrait">
+                <img src="portraits/javier.png" alt="javier xd">
+            </div>
+            <div id="flag">
+                <img id="flag" src="flags/venezuela.png" alt="venezuela xd">
+            </div>
+        </div>
     </div>
 
     <div class="card" style="--accent:#83f7fd">
         <p class="name">Viki</p>
         <div id="argentina-clock" class="clock"></div>
+        <div id="image-container">
+            <div id="portrait">
+                <img src="portraits/viki.png" alt="viki xd">
+            </div>
+            <div id="flag">
+                <img id="flag" src="flags/argentina.png" alt="argentina xd">
+            </div>
+        </div>
     </div>
 
     <div class="card" style="--accent:#ff66cc">
         <p class="name">Echeto</p>
         <div id="eastern-clock" class="clock"></div>
+        <div id="image-container">
+            <div id="portrait">
+                <img src="portraits/echeto.png" alt="echeto xd">
+            </div>
+            <div id="flag">
+                <img id="flag" src="flags/usa.png" alt="usa xd">
+            </div>
+        </div>
     </div>
 
     <div class="card" style="--accent:#62afb3">
         <p class="name">Cachito</p>
         <div id="caracas4-clock" class="clock"></div>
+        <div id="image-container">
+            <div id="portrait">
+                <img src="portraits/gabriel.png" alt="gabriel xd">
+            </div>
+            <div id="flag">
+                <img id="flag" src="flags/venezuela.png" alt="venezuela xd">
+            </div>
+        </div>
     </div>
 
     <div class="card" style="--accent:#b64457">
         <p class="name">Erika</p>
         <div id="bogota2-clock" class="clock"></div>
+        <div id="image-container">
+            <div id="portrait">
+                <img src="portraits/erika.png" alt="erika xd">
+            </div>
+            <div id="flag">
+                <img id="flag" src="flags/colombia.png" alt="colombia xd">
+            </div>
+        </div>
     </div>
 
     <div class="card" style="--accent:#d08514">
         <p class="name">Sunny</p>
         <div id="eastern2-clock" class="clock"></div>
+        <div id="image-container">
+            <div id="portrait">
+                <img src="portraits/sunny.png" alt="sunny xd">
+            </div>
+            <div id="flag">
+                <img id="flag" src="flags/usa.png" alt="usa xd">
+            </div>
+        </div>
     </div>
 
     <div class="card" style="--accent:#8aa634">
         <p class="name">Nabil</p>
         <div id="caracas5-clock" class="clock"></div>
+        <div id="image-container">
+            <div id="portrait">
+                <img src="portraits/nabil.png" alt="nabil xd">
+            </div>
+            <div id="flag">
+                <img id="flag" src="flags/venezuela.png" alt="venezuela xd">
+            </div>
+        </div>
     </div>
 
 </div>
